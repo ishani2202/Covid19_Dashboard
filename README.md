@@ -1,27 +1,72 @@
-# COVID-19 Dashboard
 
-## Overview
-The **COVID-19 Dashboard** is an interactive web application designed to provide real-time, easily accessible COVID-19 statistics and trends at both global and country levels. With interactive visualizations and predictive analytics, the dashboard allows users to understand and monitor the pandemic's impact over time, aiding public awareness and informed decision-making.
+# COVID-19 Dashboard 🦠📊
 
-## Table of Contents
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation & Running the Application](#installation--running-the-application)
-- [Usage Instructions](#usage-instructions)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+Welcome to the **COVID-19 Dashboard**, an interactive web app built using **Streamlit** and **Plotly**. This dashboard provides real-time insights into the COVID-19 pandemic, allowing users to explore global and country-specific statistics in a visually appealing and easy-to-understand format.
 
-## Features
-- **Real-Time Data Integration**: Accesses up-to-date COVID-19 data from a trusted API, including case counts, recoveries, and fatalities globally and by country.
-- **Global & Country-Level Insights**: Offers an overview of COVID-19 trends worldwide, with an option to select individual countries for specific, localized insights.
-- **Interactive Visualizations**: Displays data through dynamic charts and graphs, illustrating trends over time and allowing users to explore data interactively.
-- **Filtering Options**: Users can filter data by date range and specific countries, offering detailed insight into COVID-19 data during specified periods or regions.
-- **Predictive Analytics**: Uses machine learning models to forecast COVID-19 trends, enabling proactive measures and planning based on data-driven predictions.
+### 🌟 Key Features:
+- **Real-Time Data**: View live COVID-19 stats for countries worldwide including **confirmed cases**, **deaths**, and **recoveries**.
+- **Interactive Filters**: Select your country, the year, and moving average window to tailor the data.
+- **Engaging Visualizations**: Enjoy dynamic **choropleth maps**, **pie charts**, and **line charts** that highlight key trends and global hotspots.
+- **Worldwide Overview**: Get a global summary of the pandemic and track daily cases and deaths.
 
-## Project Structure
-The project is organized to facilitate code readability and maintainability, with separate modules for data handling, visualizations, and model building:
+### 🚀 Live Demo:
+Check out the live version of the dashboard [here](https://your-streamlit-app-url) (replace with your actual URL).
+
+### 💻 Technologies Used:
+- **Streamlit**: For creating the interactive web interface.
+- **Plotly**: For generating interactive, visually rich charts.
+- **Pandas**: For data processing and manipulation.
+- **PyCountry**: For mapping country names to ISO country codes.
+
+### 🛠️ Prerequisites:
+Make sure you have the following before running the app:
+- Python 3.7 or higher
+- Streamlit, Plotly, Pandas, and PyCountry libraries installed
+
+### 📥 Installation:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/covid19-dashboard.git
+   cd covid19-dashboard
+   ```
+
+2. **Set up a virtual environment** (recommended):
+   ```bash
+   python -m venv env
+   source env/bin/activate   # For Linux/macOS
+   .\env\Scriptsctivate    # For Windows
+   ```
+
+3. **Install the required dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the Streamlit app**:
+   Start the dashboard locally by running:
+   ```bash
+   streamlit run dashboard.py
+   ```
+
+5. Open your browser and visit the app at `http://localhost:8501`.
+
+### 🧰 Configuration:
+- Customize the dashboard’s theme and layout via the `.streamlit/config.toml` file.
+- Adjust the title, page icon, and layout options to fit your preferences.
+
+### 🌍 Data Source:
+This dashboard uses the data from the [CSSEGISandData COVID-19 dataset](https://github.com/CSSEGISandData/COVID-19), which provides time-series data for COVID-19 cases, deaths, and recoveries globally and by country.
+
+### 📸 Screenshots
+![image](https://github.com/user-attachments/assets/dbb0065b-5e06-403b-bc86-05ef20c230a2)
+
+---
+
+### 📝 License:
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Enjoy exploring the COVID-19 Dashboard! 🚀🌍
 
