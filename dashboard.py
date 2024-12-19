@@ -33,7 +33,7 @@ st.sidebar.text("Selected : {} day(s)".format(window))
 
 # Processing data for the selected country so it could be printed on the plot
 
-@st.cache
+@st.cache_data
 def process_data(df, country = "India", year = [2021, 2020], window = 1):
     if year == [2020]:
         temp = df.iloc[:, :349]
@@ -53,7 +53,7 @@ def process_data(df, country = "India", year = [2021, 2020], window = 1):
 
 # Getting the latest world stats
 
-@st.cache
+@st.cache_data
 def get_world_total(df):
     return (df.iloc[:,-1] - df.iloc[:,-2]).sum()
 
@@ -65,7 +65,7 @@ world_data = [world_conf, world_dead, world_recd]
 
 # Getting the latest stats for the selected country
 
-@st.cache
+@st.cache_data
 def get_country_total(df, country = "India"):
     return (df[df['Country/Region'] == country].iloc[:,-1] - df[df['Country/Region'] == country].iloc[:,-2]).sum()
 
@@ -94,7 +94,7 @@ st.markdown("")
 
 # Plotting the choropleth plot for the world reprsenting the latest "hot spots" for the confirmed cases
 
-@st.experimental_memo
+@st.cache_data
 def plot_world_graph(conf):
     daily_cases = conf.iloc[:, -1] - conf.iloc[:, -2]
     conf["Daily Cases"] = daily_cases
@@ -128,7 +128,7 @@ fig2.update_layout(title = "<b>Confirmed cases, Deaths & Recoveries Worldwide</b
 
 # Plotting the Horizontal Bar Graph depicting Countries with Max Confirmed Cases
 
-@st.experimental_memo
+@st.cache_data
 def top_10(conf):
     daily_cases = conf.iloc[:, -1] - conf.iloc[:, -2]
     conf["Daily Cases"] = daily_cases
