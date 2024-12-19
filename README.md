@@ -35,7 +35,7 @@ Make sure you have the following before running the app:
    ```bash
    python -m venv env
    source env/bin/activate   # For Linux/macOS
-   .\env\Scriptsctivate    # For Windows
+   .\env\Scriptsactivate    # For Windows
    ```
 
 3. **Install the required dependencies**:
