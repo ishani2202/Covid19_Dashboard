@@ -10,7 +10,7 @@ Welcome to the **COVID-19 Dashboard**, an interactive web app built using **Stre
 - **Worldwide Overview**: Get a global summary of the pandemic and track daily cases and deaths.
 
 ### 🚀 Live Demo:
-Check out the live version of the dashboard [here](https://your-streamlit-app-url) (replace with your actual URL).
+Check out the live version of the dashboard [here](https://covid19dashboardx.streamlit.app/) 
 
 ### 💻 Technologies Used:
 - **Streamlit**: For creating the interactive web interface.
